@@ -1,0 +1,114 @@
+{
+  "intents": [
+    {
+      "intent": "start",
+      "keywords": ["start", "begin", "initiate"],
+      "response": "Before you proceed, can you please share your Mobile Number? (Format: 015566XXXXX)"
+    },
+    {
+      "intent": "mobile-number",
+      "keywords": ["mobile", "phone", "mobile-number"],
+      "response": "May I know your First name, please?"
+    },
+    {
+      "intent": "first-name",
+      "keywords": ["first name", "name"],
+      "response": "May I know your Last name, please?"
+    },
+    {
+      "intent": "last-name",
+      "keywords": ["last name", "surname"],
+      "response": "Please, enter a valid Passport number?"
+    },
+    {
+      "intent": "passport-number",
+      "keywords": ["passport number", "passport"],
+      "response": "Lastly, please share your E-mail address."
+    },
+    {
+      "intent": "email-id",
+      "keywords": ["email", "email address"],
+      "response": "Hello, how may I help you today? (room book / cancel book)"
+    },
+    {
+      "intent": "help",
+      "keywords": ["room book", "cancel book", "help"],
+      "response": "Where would you like to travel? Please type hotel or destination name. Example: (USA/Europe/Asia)"
+    },
+    {
+      "intent": "destination",
+      "keywords": ["usa", "europe", "asia", "destination", "travel"],
+      "response": "In which city would you like to travel? Please choose from the following options: "
+    },
+    {
+      "intent": "city",
+      "keywords": ["city"],
+      "response": "Please select your Check in date? (Format: YYYY-MM-DD)"
+    },
+    {
+      "intent": "check-in-date",
+      "keywords": ["check in date", "check-in"],
+      "response": "Please select your Check out date? (Format: YYYY-MM-DD)"
+    },
+    {
+      "intent": "check-out-date",
+      "keywords": ["check out date", "check-out"],
+      "response": "Please enter the total number of adults traveling (maximum 4 adults)."
+    },
+    {
+      "intent": "total-adults",
+      "keywords": ["adults", "number of adults"],
+      "response": "We have found these rooms for you: \n1. Deluxe Room Twin Bed for 180 €\n2. Deluxe Room City View King Bed for 220 €\n3. Deluxe Room Mangrove View Twin Bed for 250 €\n Please select a room type by typing the corresponding number."
+    },
+    {
+      "intent": "room-type",
+      "keywords": ["1", "2", "3", "room type", "room"],
+      "response": "Would you like to add breakfast/dinner? (No additional charges for that.)"
+    },
+    {
+      "intent": "breakfast-dinner",
+      "keywords": ["yes", "no", "breakfast", "dinner"],
+      "response": "Would you like to add parking space?"
+    },
+    {
+      "intent": "parking-space",
+      "keywords": ["yes", "no", "parking", "parking space"],
+      "response": "Would you like a taxi service?"
+    },
+    {
+      "intent": "taxi-service",
+      "keywords": ["yes", "no", "taxi", "taxi service"],
+      "response": "Thank you for sharing the details. Would you like to confirm your booking? (yes/no)"
+    },
+    {
+      "intent": "confirmation",
+      "keywords": ["yes", "no", "confirm", "confirmation"],
+      "response": "Your booking details are as follows:\nMobile Number: {{mobile_number}}\nFirst Name: {{first_name}}\nLast Name: {{last_name}}\nPassport Number: {{passport_number}}\nEmail: {{email_id}}\nDestination: {{destination}}\nCity: {{city}}\nCheck-in Date: {{check_in_date}}\nCheck-out Date: {{check_out_date}}\nTotal Adults: {{total_adults}}\nRoom Type: {{room_type}}\nBreakfast/Dinner: {{breakfast_dinner}}\nParking Space: {{parking_space}}\nTaxi Service: {{taxi_service}}\nDo you want to proceed with the payment? (yes/no)"
+    },
+    {
+      "intent": "payment-option",
+      "keywords": ["yes", "no", "payment"],
+      "response": "Please select the payment option:\n1. Credit Card\n2. Debit Card\n3. Pay at Hotel"
+    },
+    {
+      "intent": "payment-method",
+      "keywords": ["1", "2", "3", "credit card", "debit card", "pay at hotel", "payment method"],
+      "response": "Please enter your payment card number:"
+    },
+    {
+      "intent": "card-number",
+      "keywords": ["card number"],
+      "response": "Please enter the card expiry date (MM/YY):"
+    },
+    {
+      "intent": "card-expiry",
+      "keywords": ["card expiry", "expiry date"],
+      "response": "Thank you so much for providing the payment details. Your booking is now confirmed."
+    },
+    {
+      "intent": "restart",
+      "keywords": ["yes", "no", "restart"],
+      "response": "It seems like there are some issues with the provided information. Would you like to restart the conversation? (yes/no)"
+    }
+  ]
+}
